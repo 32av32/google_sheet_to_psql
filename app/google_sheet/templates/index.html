@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Список заказов{% endblock %}
+
+{% block content %}
+    <div class="container">
+       <h1>Список заказов</h1>
+        <!-- Вывод заказов -->
+            {% include "order_item.html" with orders=object_list %}
+    </div>
+
+{% endblock %}
